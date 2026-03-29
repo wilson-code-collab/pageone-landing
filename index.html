@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -8,21 +7,18 @@
 <meta name="description" content="PageOne — a new streaming experience. Get early access.">
 
 <!-- Open Graph -->
-
 <meta property="og:type" content="website">
 <meta property="og:title" content="PageOne — Watch How You Want, When It Matters">
 <meta property="og:description" content="A new streaming experience is coming. Get early access.">
 <meta property="og:image" content="https://www.watchpageone.com/og-image.png">
 
 <!-- Twitter Card -->
-
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PageOne — Watch How You Want, When It Matters">
 <meta name="twitter:description" content="A new streaming experience is coming. Get early access.">
 <meta name="twitter:image" content="https://www.watchpageone.com/og-image.png">
 
 <!-- Favicon -->
-
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAGVUExURQAAACyO2yuS4iyT4SyU4yyU4yyQ3i2T4SyT4iyU4yyR3iyU4yyU4yuT4yyS4CyS4C2U4i6T4S2T4pemsqusrausrausraqrrKqrrKqrrKqrrKusramqq6urraqrrKqrrKmqqyyR4CuU5CuS4SyT4iyU5SyR3yyT4iyT4yyU5CyT4iyU5CyR3yyU5CyU5C2T4i2T4S2U45qotKysrampq6usrausrausramqq6usrqusrqmqrKqrrKqrrCuS4iuU5SuS4iyU5CyT4yyU4yyU4yyU4yyU5CyT4yyU5CyT4SyU5CyS4SyV5CyT4iyR3zCR3KirrqusrqqrrKusrqqrrausraqrrKmqrKutrqqrrKutrqmqrKmqq6ipqiuT4yuT5CuT4iyT4yyR3yyT4i2T4iyT4SyS4S2S3yyU4yyR3i2T4S2U4y2T4SqR362rqaqrraqrraurraipqqqrrKipqqipq6qrrKeoqqurraqrrKqrrKipqiyQ3yyR3y6K0S2T4SyT4i2U4y2T4iyIz4aGhpGOkwAAAO0LXtIAAACGdFJOUwAZqqa+jzqcuJEsnLmvil6orXYik7q4UHS0rMBAcaataT3kZG7idaGx3a+9N8Tbp5vBo8AvnMemSN/llau/a+59rL3QrazJrsZv3JLgm4FdoMNZwKnYVjHal+eKhVGjxXxzIlZ6Z1BStzFKfnIqH3KEXiVlGyNjHmF+aSCDXwV9ubZcAwEB6SPeOwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfqAw4BECpMzy4XAAAAqUlEQVQ4y2NgGAVDBzAyMbOwsrFzcHJx8/Dy8QsICgmLiIqJS0hKScvIyskrMCgqKauoqqlraGpp6+hy6OkbGBoZm5iaSZtbWMpZWdvYMtjZOzg6Obu4url7eHp5+/j6+QcEBgWHhIaFR0RGRcfEMsTFJyQmJaekpqX7ZuhlZmXn5OblFxQWFZeUlpVXVFZVM9TUQtxSV9/Q2NQMc1lLC0PrQIfOKKA+AADC8SQQC/vLWAAAAABJRU5ErkJggg==">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,397 +28,372 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-–blue: #3B9EE6;
-–blue-bright: #4AACF4;
-–blue-glow: rgba(59, 158, 230, 0.15);
-–silver: #B0B8C0;
-–bg: #0A0A0E;
-–surface: #151519;
-–surface-raised: #1C1C22;
-–surface-border: rgba(255,255,255,0.06);
-–surface-border-hover: rgba(255,255,255,0.1);
-–text: #F2F2F4;
-–text-secondary: #C8C8D0;
-–text-muted: #9A9AA5;
-–radius: 12px;
+  --blue: #3B9EE6;
+  --blue-bright: #4AACF4;
+  --blue-glow: rgba(59, 158, 230, 0.15);
+  --silver: #B0B8C0;
+  --bg: #0A0A0E;
+  --surface: #151519;
+  --surface-raised: #1C1C22;
+  --surface-border: rgba(255,255,255,0.06);
+  --surface-border-hover: rgba(255,255,255,0.1);
+  --text: #F2F2F4;
+  --text-secondary: #C8C8D0;
+  --text-muted: #9A9AA5;
+  --radius: 12px;
 }
 
 html {
-font-family: ‘Outfit’, -apple-system, sans-serif;
-background: var(–bg);
-color: var(–text);
-scroll-behavior: smooth;
--webkit-font-smoothing: antialiased;
+  font-family: 'Outfit', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body { overflow-x: hidden; }
 
+
 /* ═══════════════════════════════════════════
-HERO
-═══════════════════════════════════════════ */
+   HERO
+   ═══════════════════════════════════════════ */
 .hero {
-position: relative;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 40px 24px;
-overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  overflow: hidden;
 }
 
 .hero-bg {
-position: absolute;
-inset: 0;
-z-index: 0;
-background:
-radial-gradient(ellipse 80% 60% at 50% 40%, rgba(59,158,230,0.1) 0%, transparent 60%),
-radial-gradient(ellipse 60% 50% at 20% 80%, rgba(59,80,230,0.05) 0%, transparent 50%),
-radial-gradient(ellipse 50% 40% at 80% 20%, rgba(100,160,230,0.06) 0%, transparent 50%);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(59,158,230,0.1) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 20% 80%, rgba(59,80,230,0.05) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 40% at 80% 20%, rgba(100,160,230,0.06) 0%, transparent 50%);
 }
 .hero-bg::before {
-content: ‘’;
-position: absolute;
-inset: 0;
-background: url(‘https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1920&q=80’) center/cover no-repeat;
-opacity: 0.12;
-filter: saturate(0.3) brightness(0.8);
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1920&q=80') center/cover no-repeat;
+  opacity: 0.12;
+  filter: saturate(0.3) brightness(0.8);
 }
 .hero-bg::after {
-content: ‘’;
-position: absolute;
-inset: 0;
-background: linear-gradient(180deg,
-rgba(10,10,14,0.3) 0%,
-rgba(10,10,14,0.1) 40%,
-rgba(10,10,14,0.7) 80%,
-rgba(10,10,14,1) 100%
-);
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(10,10,14,0.3) 0%,
+    rgba(10,10,14,0.1) 40%,
+    rgba(10,10,14,0.7) 80%,
+    rgba(10,10,14,1) 100%
+  );
 }
 
 .grain {
-position: fixed;
-inset: 0;
-z-index: 100;
-pointer-events: none;
-opacity: 0.02;
-background-image: url(“data:image/svg+xml,%3Csvg viewBox=‘0 0 256 256’ xmlns=‘http://www.w3.org/2000/svg’%3E%3Cfilter id=‘n’%3E%3CfeTurbulence type=‘fractalNoise’ baseFrequency=‘0.9’ numOctaves=‘4’ stitchTiles=‘stitch’/%3E%3C/filter%3E%3Crect width=‘100%25’ height=‘100%25’ filter=‘url(%23n)’/%3E%3C/svg%3E”);
-background-size: 256px;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 256px;
 }
 
 .hero-content {
-position: relative;
-z-index: 2;
-display: flex;
-flex-direction: column;
-align-items: center;
-max-width: 680px;
-width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 680px;
+  width: 100%;
 }
 
 .logo-wrap {
-margin-bottom: 32px;
-opacity: 0;
-animation: fadeUp 1s ease-out 0.2s forwards;
+  margin-bottom: 32px;
+  opacity: 0;
+  animation: fadeUp 1s ease-out 0.2s forwards;
 }
 .logo-wrap img {
-height: 60px;
-width: auto;
-display: block;
+  height: 60px;
+  width: auto;
+  display: block;
 }
 
 .tagline {
-font-family: ‘Outfit’, sans-serif;
-font-weight: 300;
-font-style: italic;
-font-size: clamp(1.5rem, 3.5vw, 2.2rem);
-text-align: center;
-line-height: 1.5;
-color: var(–text-secondary);
-letter-spacing: 0.01em;
-margin-bottom: 40px;
-opacity: 0;
-animation: fadeUp 1s ease-out 0.5s forwards;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  text-align: center;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  letter-spacing: 0.01em;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeUp 1s ease-out 0.5s forwards;
 }
 
 /* ── Email capture ── */
 .capture-group {
-width: 100%;
-max-width: 500px;
-opacity: 0;
-animation: fadeUp 1s ease-out 0.7s forwards;
+  width: 100%;
+  max-width: 500px;
+  opacity: 0;
+  animation: fadeUp 1s ease-out 0.7s forwards;
 }
 
 .email-form {
-display: flex;
-gap: 0;
-width: 100%;
-background: var(–surface-raised);
-border: 1px solid var(–surface-border);
-border-radius: 60px;
-padding: 5px;
-transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  gap: 0;
+  width: 100%;
+  background: var(--surface-raised);
+  border: 1px solid var(--surface-border);
+  border-radius: 60px;
+  padding: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .email-form:focus-within {
-border-color: rgba(59,158,230,0.3);
-box-shadow: 0 0 0 4px var(–blue-glow);
+  border-color: rgba(59,158,230,0.3);
+  box-shadow: 0 0 0 4px var(--blue-glow);
 }
 .email-form input {
-flex: 1;
-background: transparent;
-border: none;
-outline: none;
-padding: 15px 24px;
-font-family: ‘Outfit’, sans-serif;
-font-size: 0.95rem;
-font-weight: 300;
-color: var(–text);
-min-width: 0;
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 15px 24px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--text);
+  min-width: 0;
 }
-.email-form input::placeholder { color: var(–text-muted); }
+.email-form input::placeholder { color: var(--text-muted); }
 .email-form input:invalid:not(:placeholder-shown) { color: #E85D5D; }
 .email-form button {
-background: var(–blue);
-color: #fff;
-border: none;
-border-radius: 60px;
-padding: 15px 30px;
-font-family: ‘Outfit’, sans-serif;
-font-size: 0.9rem;
-font-weight: 500;
-letter-spacing: 0.02em;
-cursor: pointer;
-white-space: nowrap;
-transition: background 0.2s ease, transform 0.15s ease;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 60px;
+  padding: 15px 30px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.15s ease;
 }
-.email-form button:hover { background: var(–blue-bright); transform: scale(1.03); }
+.email-form button:hover { background: var(--blue-bright); transform: scale(1.03); }
 .email-form button:active { transform: scale(0.98); }
-.email-form button:focus-visible { outline: 2px solid var(–blue); outline-offset: 2px; }
+.email-form button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 
 .form-error {
-text-align: center;
-color: #E85D5D;
-font-size: 0.85rem;
-margin-top: 10px;
-height: 0; overflow: hidden; opacity: 0;
-transition: height 0.3s ease, opacity 0.3s ease;
+  text-align: center;
+  color: #E85D5D;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  height: 0; overflow: hidden; opacity: 0;
+  transition: height 0.3s ease, opacity 0.3s ease;
 }
 .form-error.visible { height: 1.4em; opacity: 1; }
 
 .success-msg {
-text-align: center;
-color: var(–blue);
-font-size: 0.95rem;
-margin-top: 16px;
-display: none;
+  text-align: center;
+  color: var(--blue);
+  font-size: 0.95rem;
+  margin-top: 16px;
+  display: none;
 }
 .success-msg.visible { display: block; animation: fadeUp 0.5s ease-out forwards; }
 
 /* ── Social proof ── */
 .social-proof {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
-margin-top: 20px;
-font-size: 0.85rem;
-color: var(–text-muted);
-opacity: 0;
-animation: fadeUp 1s ease-out 0.9s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  opacity: 0;
+  animation: fadeUp 1s ease-out 0.9s forwards;
 }
 .social-proof .avatars {
-display: flex;
-margin-right: 2px;
+  display: flex;
+  margin-right: 2px;
 }
 .social-proof .avatar {
-width: 28px;
-height: 28px;
-border-radius: 50%;
-border: 2px solid var(–bg);
-margin-left: -8px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 0.65rem;
-font-weight: 500;
-color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--bg);
+  margin-left: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #fff;
 }
 .social-proof .avatar:first-child { margin-left: 0; }
 .social-proof .a1 { background: linear-gradient(135deg, #3B9EE6, #2B7EBF); }
 .social-proof .a2 { background: linear-gradient(135deg, #6C5CE7, #4834D4); }
 .social-proof .a3 { background: linear-gradient(135deg, #E17055, #D63031); }
 .social-proof .a4 { background: linear-gradient(135deg, #00B894, #00A381); }
-.social-proof strong { color: var(–text-secondary); font-weight: 500; }
+.social-proof strong { color: var(--text-secondary); font-weight: 500; }
+
 
 /* ═══════════════════════════════════════════
-DEVICES + CTA
-═══════════════════════════════════════════ */
+   DEVICES + CTA
+   ═══════════════════════════════════════════ */
 .devices-cta {
-position: relative;
-z-index: 2;
-padding: 120px 24px;
-text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 120px 24px;
+  text-align: center;
 }
 .devices-cta-inner {
-max-width: 700px;
-margin: 0 auto;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .devices-heading {
-font-family: ‘Outfit’, sans-serif;
-font-size: clamp(1.4rem, 3vw, 2rem);
-font-weight: 400;
-color: var(–text);
-margin-bottom: 12px;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 12px;
 }
-.devices-heading span { color: var(–blue); font-weight: 500; }
+.devices-heading span { color: var(--blue); font-weight: 500; }
 .devices-sub {
-font-size: 0.95rem;
-color: var(–text-muted);
-font-weight: 300;
-margin-bottom: 48px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  margin-bottom: 48px;
 }
 .device-icons {
-display: flex;
-justify-content: center;
-gap: 40px;
-flex-wrap: wrap;
-margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
 }
 .device-item {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 10px;
-color: var(–text-muted);
-font-size: 0.78rem;
-font-weight: 400;
-letter-spacing: 0.04em;
-transition: color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  transition: color 0.3s ease;
 }
-.device-item:hover { color: var(–text-secondary); }
+.device-item:hover { color: var(--text-secondary); }
 .device-item svg {
-width: 32px;
-height: 32px;
-stroke: currentColor;
-stroke-width: 1.5;
-fill: none;
+  width: 32px;
+  height: 32px;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  fill: none;
 }
 
 .section-divider {
-width: 48px;
-height: 1px;
-background: linear-gradient(90deg, transparent, var(–silver), transparent);
-margin: 0 auto 64px;
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--silver), transparent);
+  margin: 0 auto 64px;
 }
 
 .bottom-form {
-max-width: 500px;
-margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .bottom-form .email-form { margin-bottom: 12px; }
 
+
 /* ═══════════════════════════════════════════
-FOOTER
-═══════════════════════════════════════════ */
+   FOOTER
+   ═══════════════════════════════════════════ */
 footer {
-position: relative;
-z-index: 2;
-padding: 40px 24px;
-border-top: 1px solid var(–surface-border);
-display: flex;
-justify-content: space-between;
-align-items: center;
-max-width: 1000px;
-margin: 0 auto;
-width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 40px 24px;
+  border-top: 1px solid var(--surface-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
 }
 footer .copyright {
-font-size: 0.75rem;
-color: var(–text-muted);
-letter-spacing: 0.03em;
-}
-.footer-social {
-display: flex;
-align-items: center;
-gap: 12px;
-}
-.social-link {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 32px;
-height: 32px;
-border-radius: 50%;
-border: 1px solid var(–surface-border);
-color: var(–text-muted);
-transition: color 0.3s ease, border-color 0.3s ease;
-text-decoration: none;
-}
-.social-link:hover {
-color: var(–text);
-border-color: var(–surface-border-hover);
-}
-.social-link svg {
-width: 16px;
-height: 16px;
-fill: currentColor;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
 }
 footer .badge {
-display: inline-flex;
-align-items: center;
-gap: 8px;
-padding: 6px 14px;
-border-radius: 60px;
-border: 1px solid var(–surface-border);
-background: var(–surface);
-font-size: 0.7rem;
-font-weight: 400;
-letter-spacing: 0.08em;
-text-transform: uppercase;
-color: var(–text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 60px;
+  border: 1px solid var(--surface-border);
+  background: var(--surface);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
 }
 footer .badge .dot {
-width: 5px; height: 5px;
-border-radius: 50%;
-background: var(–blue);
-animation: pulse 2s ease-in-out infinite;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--blue);
+  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
 @media (prefers-reduced-motion: reduce) {
-*, *::before, *::after {
-animation-duration: 0.01ms !important;
-animation-iteration-count: 1 !important;
-transition-duration: 0.01ms !important;
-}
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @media (max-width: 768px) {
-.device-icons { gap: 28px; }
+  .device-icons { gap: 28px; }
 }
 
 @media (max-width: 540px) {
-.email-form {
-flex-direction: column;
-border-radius: var(–radius);
-padding: 6px;
-}
-.email-form input { padding: 16px 20px; text-align: center; }
-.email-form button { border-radius: 8px; padding: 16px; }
-.logo-wrap img { height: 44px; }
-footer { flex-direction: column; gap: 16px; }
+  .email-form {
+    flex-direction: column;
+    border-radius: var(--radius);
+    padding: 6px;
+  }
+  .email-form input { padding: 16px 20px; text-align: center; }
+  .email-form button { border-radius: 8px; padding: 16px; }
+  .logo-wrap img { height: 44px; }
+  footer { flex-direction: column; gap: 16px; }
 }
 </style>
-
 </head>
 <body>
 
 <div class="grain"></div>
 
 <!-- ═══ HERO ═══ -->
-
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
@@ -430,96 +401,82 @@ footer { flex-direction: column; gap: 16px; }
       <img src="logo.png" alt="PageOne">
     </div>
 
-```
-<h1 class="tagline">Watch how you want, when it matters.</h1>
+    <h1 class="tagline">Watch how you want, when it matters.</h1>
 
-<div class="capture-group">
-  <form class="email-form" novalidate>
-    <input type="email" placeholder="Enter your email" required autocomplete="email" aria-label="Email address">
-    <button type="submit">Get Early Access</button>
-  </form>
-  <p class="form-error" role="alert">Please enter a valid email address.</p>
-  <p class="success-msg">You're on the list — we'll be in touch.</p>
+    <div class="capture-group">
+      <form class="email-form" novalidate>
+        <input type="email" placeholder="Enter your email" required autocomplete="email" aria-label="Email address">
+        <button type="submit">Get Early Access</button>
+      </form>
+      <p class="form-error" role="alert">Please enter a valid email address.</p>
+      <p class="success-msg">You're on the list — we'll be in touch.</p>
 
-  <div class="social-proof">
-    <div class="avatars">
-      <div class="avatar a1">J</div>
-      <div class="avatar a2">M</div>
-      <div class="avatar a3">K</div>
-      <div class="avatar a4">R</div>
-    </div>
-```
-
+      <div class="social-proof">
+        <div class="avatars">
+          <div class="avatar a1">J</div>
+          <div class="avatar a2">M</div>
+          <div class="avatar a3">K</div>
+          <div class="avatar a4">R</div>
+        </div>
 <span>Join <strong id="waitlistCount">336</strong> others on the waitlist</span>
-</div>
-</div>
-
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ═══ DEVICES + BOTTOM CTA ═══ -->
 
+<!-- ═══ DEVICES + BOTTOM CTA ═══ -->
 <section class="devices-cta">
   <div class="devices-cta-inner">
     <h2 class="devices-heading">Coming to <span>all your screens</span></h2>
     <p class="devices-sub">Stream from anywhere, on any device you already own.</p>
 
-```
-<div class="device-icons">
-  <div class="device-item">
-    <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-    Desktop
-  </div>
-  <div class="device-item">
-    <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18" stroke-linecap="round" stroke-width="2"/></svg>
-    Mobile
-  </div>
-  <div class="device-item">
-    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1"/><line x1="3" y1="20" x2="21" y2="20" stroke-linecap="round"/><line x1="7" y1="16" x2="7" y2="20"/><line x1="17" y1="16" x2="17" y2="20"/></svg>
-    Smart TV
-  </div>
-  <div class="device-item">
-    <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><line x1="12" y1="17" x2="12" y2="17" stroke-linecap="round" stroke-width="2"/></svg>
-    Tablet
-  </div>
-  <div class="device-item">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
-    Web
-  </div>
-</div>
+    <div class="device-icons">
+      <div class="device-item">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        Desktop
+      </div>
+      <div class="device-item">
+        <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18" stroke-linecap="round" stroke-width="2"/></svg>
+        Mobile
+      </div>
+      <div class="device-item">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1"/><line x1="3" y1="20" x2="21" y2="20" stroke-linecap="round"/><line x1="7" y1="16" x2="7" y2="20"/><line x1="17" y1="16" x2="17" y2="20"/></svg>
+        Smart TV
+      </div>
+      <div class="device-item">
+        <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><line x1="12" y1="17" x2="12" y2="17" stroke-linecap="round" stroke-width="2"/></svg>
+        Tablet
+      </div>
+      <div class="device-item">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+        Web
+      </div>
+    </div>
 
-<div class="section-divider"></div>
+    <div class="section-divider"></div>
 
-<div class="bottom-form">
-  <form class="email-form" novalidate>
-    <input type="email" placeholder="Enter your email" required autocomplete="email" aria-label="Email address">
-    <button type="submit">Get Early Access</button>
-  </form>
-  <p class="form-error" role="alert">Please enter a valid email address.</p>
-  <p class="success-msg">You're on the list — we'll be in touch.</p>
-</div>
-```
-
+    <div class="bottom-form">
+      <form class="email-form" novalidate>
+        <input type="email" placeholder="Enter your email" required autocomplete="email" aria-label="Email address">
+        <button type="submit">Get Early Access</button>
+      </form>
+      <p class="form-error" role="alert">Please enter a valid email address.</p>
+      <p class="success-msg">You're on the list — we'll be in touch.</p>
+    </div>
   </div>
 </section>
 
-<!-- ═══ FOOTER ═══ -->
 
+<!-- ═══ FOOTER ═══ -->
 <footer>
   <span class="copyright">&copy; 2026 PageOne. All rights reserved.</span>
-  <div class="footer-social">
-    <a href="https://www.instagram.com/watchpageone" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-    </a>
-    <a href="https://www.facebook.com/61588105273257" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
-      <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-    </a>
-  </div>
   <div class="badge">
     <span class="dot"></span>
     Coming Soon
   </div>
 </footer>
+
 
 <script>
 (function() {
